@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <script>
+        var sum = 1;
+        var i = 2;
+        var j = 0;
+        var input1 = Number(prompt("숫자를 입력하시오"));
+        while(i <= input1)
+        {
+            sum = input1 % i
+            if(sum === 0)
+            {
+                j++;
+            }
+            i++;
+        }
+        console.log(j);
+        if(j === 1)
+        {
+            console.log("소수입니다.");
+        }
+        else{
+            console.log("소수아닙니다.");
+        }
+    </script>
+</body>
+</html>
